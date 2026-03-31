@@ -1,8 +1,12 @@
 # app/supabase_auth.py
+import os
 from supabase import create_client, Client
 
-SUPABASE_URL = "https://ezxbebqaznshrslfgwbb.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6eGJlYnFhem5zaHJzbGZnd2JiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjYwNzc1MTEsImV4cCI6MjA0MTY1MzUxMX0.eoKGlIlLXwHCFux6hlZ-KpDpjcFL-aLXDE3UQciWU5M"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+if not SUPABASE_URL or not SUPABASE_KEY:
+    raise ValueError("Missing SUPABASE_URL or SUPABASE_KEY in environment variables")
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
