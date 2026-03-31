@@ -1,0 +1,9 @@
+{
+    "participants": ["nagachaitu1270@gmail.com", "jagadeeshpadamprakash@gmail.com"],
+    "meeting_title": "Project Discussion",
+    "meeting_description": "Discussion about project scope and timeline.",
+    "meeting_duration": 60,
+    "start_time_window": "2024-09-28T09:00:00",  
+    "end_time_window": "2024-09-28T17:00:00",    
+    "priority": "high"
+}

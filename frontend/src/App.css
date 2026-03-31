@@ -1,0 +1,57 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.google-signup {
+  margin-top: 50px;
+}
+
+.google-signup h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.google-signup .google-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.calendar-page {
+  padding: 20px;
+}
+
+.new-meet-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.new-meet {
+  margin-top: 50px;
+}
+
+.new-meet input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+}
+
+.new-meet button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
